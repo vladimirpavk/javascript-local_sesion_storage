@@ -1,4 +1,7 @@
-# express-web-design
+# Local and session storage examples
+
+
+### Based on express-web-design repo
 Node, Express, Gulp, BrowserSync, HTML
 For web designers. When html or css file in client folder is changed automatically refreshes targeted browsers.
 
