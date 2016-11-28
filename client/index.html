@@ -7,8 +7,22 @@
 <body>
 
     <script>
+        window.addEventListener("storage", function(e){
+            console.log("When storage event is fired...");
+            console.log(e);
+        })
+
         function Dugme_snimi(){
-            localStorage.setItem("ime", document.getElementById("polje1").value);            
+           // localStorage.setItem("ime", document.getElementById("polje1").value);
+           var cred= {};
+           cred.ime="Vladimir";
+           cred.prezime="Pavkovic";
+           cred.password="lozinka";
+
+           console.log(JSON.stringify(cred));      
+           localStorage.setItem("user1", JSON.stringify(cred));
+
+           console.log(JSON.parse(localStorage.getItem("user1")));     
         }
 
         function Dugme_ucitaj(){

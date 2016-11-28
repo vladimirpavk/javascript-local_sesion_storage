@@ -1,4 +1,6 @@
 # Local and session storage examples
+Local storage is accessed through window.localStorage object
+
 Use
 ```
 localStorage.setItem(key, value) to set the item in local storage
@@ -6,7 +8,10 @@ localStorage.getItem(key) to retrieve the value from the item in local storage
 localStorage.clear() to erase everything in localStorage
 localStorage.removeItem(key) in order to erase the specific key from the local storage
 
+When trying to save object literals arrays use JSON.stringify(), JSON.parse
 ```
+
+Use *storage* event to determine if change has happed on the local storage and StorageEvent object. Not working in all browsers.
 
 ### Based on express-web-design repo
 Node, Express, Gulp, BrowserSync, HTML
