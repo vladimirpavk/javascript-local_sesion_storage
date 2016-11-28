@@ -1,5 +1,12 @@
 # Local and session storage examples
+Use
+```
+localStorage.setItem(key, value) to set the item in local storage
+localStorage.getItem(key) to retrieve the value from the item in local storage
+localStorage.clear() to erase everything in localStorage
+localStorage.removeItem(key) in order to erase the specific key from the local storage
 
+```
 
 ### Based on express-web-design repo
 Node, Express, Gulp, BrowserSync, HTML

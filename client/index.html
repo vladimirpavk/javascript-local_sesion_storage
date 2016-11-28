@@ -1,7 +1,28 @@
-<head>
+<!DOCTYPE html>
+
+<head>   
 </head>
 
 
 <body>
-    <h1>This i33444s111 the we44324b page</h1>
+
+    <script>
+        function Dugme_snimi(){
+            localStorage.setItem("ime", document.getElementById("polje1").value);            
+        }
+
+        function Dugme_ucitaj(){
+            document.getElementById("from_local").innerHTML=localStorage.getItem("ime");
+        }
+    </script>
+
+
+    <label>Unesite ime</label>
+    <input type="text" id="polje1" />
+    <button onclick="Dugme_snimi()">Save data to local storage</button>
+    <button onclick="Dugme_ucitaj()">Retrieve data from local storage</button>   
+    <div style="display: block">
+        <label>From local storage : </label>
+        <label id="from_local"></label>
+    </div>
 </body>
